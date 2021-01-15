@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <article>
+    <section class="TrackerSection">
+      <section class="InputSection">
+        <div class="InputSectionWrapper">
+          <h1 class="SectionTitle">IP Address Tracker</h1>
+          <div class="InputBox">
+            <input placeholder="Search for any IP address or domain" type="text">
+            <div class="SearchIconBox">
+              <img src="./images/icon-arrow.svg" alt="Search Icon" class="SearchIcon">
+            </div>
+          </div>
+          <div class="CenterWrapper">
+            <div class="LocationDetails">
+              <div class="DetailBox">
+                <h2 class="DetailBoxTitle">IP Address</h2>
+                <h1 class="DetailBoxValue ipAddress"></h1>
+              </div>
+              <div class="DetailBox">
+                <h2 class="DetailBoxTitle">Location</h2>
+                <h1 class="DetailBoxValue location"></h1>
+              </div>
+              <div class="DetailBox">
+                <h2 class="DetailBoxTitle">Timezone</h2>
+                <h1 class="DetailBoxValue timezone"></h1>
+              </div>
+              <div class="DetailBox">
+                <h2 class="DetailBoxTitle">ISP</h2>
+                <h1 class="DetailBoxValue isp"></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="MapSection">
+        <div id="mapid"></div>
+      </section>
+    </section>
+  </article>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">newbiehritick</a>.
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
+
+    <!-- UTC add offset value dynamically using the API
+  ISP
+   -->

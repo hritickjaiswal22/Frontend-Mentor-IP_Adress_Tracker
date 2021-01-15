@@ -1,0 +1,144 @@
+/* <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+</style> 
+font-family: 'Rubik', sans-serif;
+*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.TrackerSection {
+  height: 720px;
+}
+
+.InputSectionWrapper {
+  color: white;
+  padding: 4rem;
+  background-size: cover;
+  background-image: url(./images/pattern-bg.png);
+  padding-bottom: 10rem;
+  position: relative;
+}
+
+.SectionTitle {
+  font-size: 2.7rem;
+  font-weight: 500;
+  margin: 0 auto;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.InputBox {
+  max-width: 50rem;
+  margin: 0 auto;
+  display: flex;
+  width: 90%;
+  border-radius: 1rem;
+}
+
+input {
+  width: 90%;
+  padding: 1.5rem;
+  border-radius: 1rem 0 0 1rem;
+  outline: none;
+  border: none;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: grey;
+}
+
+.SearchIconBox {
+  width: 10%;
+  background-color: black;
+  border-radius: 0 1rem 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SearchIconBox:hover {
+  cursor: pointer;
+}
+
+.SearchIcon {
+  width: 20%;
+}
+
+.CenterWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.LocationDetails {
+  background-color: white;
+  color: black;
+  position: absolute;
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  padding: 2rem;
+  border-radius: 2rem;
+  bottom: -20%;
+  z-index: 1000000000000;
+}
+
+.DetailBox {
+  width: 24.5%;
+  border-right: 2px solid hsl(0, 0%, 59%);
+  padding: 1rem;
+}
+
+.DetailBox:last-child {
+  border-right: none;
+}
+
+.DetailBoxTitle {
+  color: hsl(0, 0%, 59%);
+}
+
+.DetailBoxValue {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.MapSection {
+  height: 480px;
+}
+
+#mapid {
+  height: 100%;
+}
+
+.attribution {
+  max-width: 300px;
+  margin: 2rem auto;
+}
+
+@media only screen and (max-width: 750px) {
+  .DetailBoxValue {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .LocationDetails {
+    display: block;
+    bottom: -90%;
+    text-align: center;
+    max-width: 300px;
+  }
+
+  .DetailBox {
+    width: 100%;
+    border-right: none;
+  }
+}
